@@ -5,6 +5,8 @@ List of papers, reports and links of materials on Big Data and related topics.
 
 * Resource Management
 
+[Apache Hadoop YARN: yet another resource negotiator] (https://54e57bc8-a-62cb3a1a-s-sites.googlegroups.com/site/2013socc/home/program/a5-vavilapalli.pdf?attachauth=ANoY7crrl3LueZKiJV4CAYJgK2jv4N8iE2Asqa9wwGeKUwhQVSmfDnvX9Iqb6cNQth2DtlMG99O5hJTOTkJkCUl0r6txC3JVaumyuAe977DaELZufXYPul83aJRSdIt_fotZMNspdOQjdqIfJ4Vb6Yktw_i5sAcY1GySSIJUaY3VLLIu2h7N8lqgPf484j-DgvLiICXVg5GdqjytjtqLcP8DuLSOiOZOMzDhYdObvvI_9KZa9WUoJIY%3D&attredirects=0)
+
 
 * Papers on benchmarking
 
