@@ -5,18 +5,42 @@ List of papers, reports and links of materials on Big Data and related topics.
 
 ## <a name='TOC'>Table of Contents</a>
 
-  1. [Resource Management](#resource-management)
-  2. [Big Data Benchmarks](#benchmarking)
-  3. [Messaging/Event Systems](#messaging-systems)
+  1. [General](#general)
+  2. [Resource Management](#resource-management)
+  3. [Page Formats](#page-formats)
+  4. [Storage Systems](#storage-systems)
+  5. [NoSQL](#nosql)
+  6. [Big Data Management Systems](#big-data-man-sys)
+  7. [Processing Systems](#processing-systems)
+  8. [Hadoop Ecosystem](#hadoop-ecosys)
+  9. [SQL-on-Hadoop](#sql-on-hadoop)
+  10. [Messaging/Event Systems](#messaging-systems)
+  11. [Big Data Benchmarks](#benchmarking)
 
+## <a name='general'> General
+
+* [Toward Scalable Systems for Big Data Analytics A Technology Tutorial] (http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6842585)
 
 ## <a name='resource-management'> Resource Management
 
 * [Apache Hadoop YARN: yet another resource negotiator] (https://54e57bc8-a-62cb3a1a-s-sites.googlegroups.com/site/2013socc/home/program/a5-vavilapalli.pdf?attachauth=ANoY7crrl3LueZKiJV4CAYJgK2jv4N8iE2Asqa9wwGeKUwhQVSmfDnvX9Iqb6cNQth2DtlMG99O5hJTOTkJkCUl0r6txC3JVaumyuAe977DaELZufXYPul83aJRSdIt_fotZMNspdOQjdqIfJ4Vb6Yktw_i5sAcY1GySSIJUaY3VLLIu2h7N8lqgPf484j-DgvLiICXVg5GdqjytjtqLcP8DuLSOiOZOMzDhYdObvvI_9KZa9WUoJIY%3D&attredirects=0)
 
+## <a name='page-formats'> Page Formats
 
-## <a name='benchmarking'> Big Data Benchmarks
+## <a name='storage-systems'> Storage Systems
 
+## <a name='nosql'> NoSQL
+
+* [(basics)NoSQL Databases] (http://www.christof-strauch.de/nosqldbs.pdf)
+* [(book)Cassandra: The Definitive Guide] (http://filepi.com/i/R1Cuxhb)
+
+## <a name='big-data-man-sys'> Big Data Management Systems
+
+## <a name='processing-systems'> Processing Systems
+
+## <a name='hadoop-ecosys'> Hadoop Ecosystem
+
+## <a name='sql-on-hadoop'> SQL-on-Hadoop
 
 ## <a name='messaging-systems'> Messaging/Event Systems
 
@@ -31,3 +55,5 @@ Log processing has become a critical component of the data pipeline for consumer
 * [Storm @ Twitter - paper] (http://dl.acm.org/citation.cfm?id=2595641)
 
 * [SAMOA: a platform for mining big data streams] (http://dl.acm.org/citation.cfm?id=2488042)
+
+## <a name='benchmarking'> Big Data Benchmarks
