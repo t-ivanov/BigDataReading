@@ -64,6 +64,11 @@ MapReduce-based data warehouse systems are playing important roles of supporting
 ## <a name='nosql'> NoSQL
 
 * [(basics) NoSQL Databases] (http://www.christof-strauch.de/nosqldbs.pdf)
+* [Cassandra-A Decentralized Structured Storage System] (http://www.cs.ucr.edu/~tsotras/cs260/F12/cassandra.pdf)
+
+Cassandra is a distributed storage system for managing very large amounts of structured data spread out across many
+commodity servers, while providing highly available service with no single point of failure. Cassandra aims to run on top of an infrastructure of hundreds of nodes (possibly spread across different data centers). At this scale, small and large components fail continuously. The way Cassandra manages the persistent state in the face of these failures drives the reliability and scalability of the software systems relying on this service. While in many ways Cassandra resembles a database and shares many design and implementation strategies therewith, Cassandra does not support a full relational data model; instead, it provides clients with a simple data model that supports dynamic control over data layout and format. Cassandra system was designed to run on cheap commodity hardware and handle high write throughput while not sacriffcing read effciency.
+
 * [(book) Cassandra: The Definitive Guide] (http://filepi.com/i/R1Cuxhb)
 
 ## <a name='big-data-man-sys'> Big Data Management Systems
@@ -93,6 +98,12 @@ pabilities, but also provides a number of novel tools for data clean-
 ing, data search and integration, and data visualization tools. 
 
 ## <a name='resource-management'> Resource Management
+
+* [The Datacenter Needs an Operating System] (https://www.usenix.org/legacy/event/hotcloud11/tech/final_files/Zaharia.pdf)
+
+* [Mesos: A Platform for Fine-Grained Resource Sharing in the Data Center] (http://static.usenix.org/events/nsdi11/tech/full_papers/Hindman_new.pdf) & [Apache Mesos] (http://mesos.apache.org/)
+
+We present Mesos, a platform for sharing commodity clusters between multiple diverse cluster computing frameworks, such as Hadoop and MPI. Sharing improves cluster utilization and avoids per-framework data replication. Mesos shares resources in a fine-grained manner, allowing frameworks to achieve data locality by taking turns reading data stored on each machine. To support the sophisticated schedulers of today’s frameworks, Mesos introduces a distributed two-level scheduling mechanism called resource offers. Mesos decides how many resources to offer each framework, while frameworks decide which resources to accept and which computations to run on them. Our results show that Mesos can achieve near-optimal data locality when sharing the cluster among diverse frameworks, can scale to 50,000 (emulated) nodes, and is resilient to failures.
 
 * [Apache Hadoop YARN: yet another resource negotiator] (https://54e57bc8-a-62cb3a1a-s-sites.googlegroups.com/site/2013socc/home/program/a5-vavilapalli.pdf?attachauth=ANoY7crrl3LueZKiJV4CAYJgK2jv4N8iE2Asqa9wwGeKUwhQVSmfDnvX9Iqb6cNQth2DtlMG99O5hJTOTkJkCUl0r6txC3JVaumyuAe977DaELZufXYPul83aJRSdIt_fotZMNspdOQjdqIfJ4Vb6Yktw_i5sAcY1GySSIJUaY3VLLIu2h7N8lqgPf484j-DgvLiICXVg5GdqjytjtqLcP8DuLSOiOZOMzDhYdObvvI_9KZa9WUoJIY%3D&attredirects=0)
 
