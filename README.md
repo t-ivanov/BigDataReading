@@ -111,6 +111,15 @@ Increasing scale and the need for rapid response to changing requirements are ha
  
 * [Apache Hadoop YARN: yet another resource negotiator] (https://54e57bc8-a-62cb3a1a-s-sites.googlegroups.com/site/2013socc/home/program/a5-vavilapalli.pdf?attachauth=ANoY7crrl3LueZKiJV4CAYJgK2jv4N8iE2Asqa9wwGeKUwhQVSmfDnvX9Iqb6cNQth2DtlMG99O5hJTOTkJkCUl0r6txC3JVaumyuAe977DaELZufXYPul83aJRSdIt_fotZMNspdOQjdqIfJ4Vb6Yktw_i5sAcY1GySSIJUaY3VLLIu2h7N8lqgPf484j-DgvLiICXVg5GdqjytjtqLcP8DuLSOiOZOMzDhYdObvvI_9KZa9WUoJIY%3D&attredirects=0)
 
+The initial design of Apache Hadoop [1] was tightly focused on running massive, MapReduce jobs to process a
+web crawl. For increasingly diverse companies, Hadoop has become the data and computational agora — the de
+facto place where data and computational resources are shared and accessed. This broad adoption and ubiquitous
+usage has stretched the initial design well beyond its intended target, exposing two key shortcomings: 1) tight
+coupling of a specific programming model with the resource management infrastructure, forcing developers to
+abuse the MapReduce programming model, and 2) centralized handling of jobs’ control flow, which resulted in
+endless scalability concerns for the scheduler.
+In this paper, we summarize the design, development,and current state of deployment of the next generation of Hadoop’s compute platform: YARN. The new architecture we introduced decouples the programming model from the resource management infrastructure, and delegates many scheduling functions (e.g., task fault-tolerance) to per-application components. We provide experimental evidence demonstrating the improvements we made, confirm improved efficiency by reporting the experience of running YARN on production environments (including 100% of Yahoo! grids), and confirm
+the flexibility claims by discussing the porting of several programming frameworks onto YARN viz. Dryad, Giraph, Hoya, Hadoop MapReduce, REEF, Spark, Storm, Tez.
 
 ## <a name='processing-systems'> Processing Systems
 
