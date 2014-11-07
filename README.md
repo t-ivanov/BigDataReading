@@ -37,9 +37,7 @@ AsterixDB is a new, full-function BDMS (Big Data Management
 System) with a feature set that distinguishes it from other platforms
 in today’s open source Big Data ecosystem. Its features make it
 well-suited to applications like web data warehousing, social data
-storage and analysis, and other use cases related to Big Data. Aster-
-ixDB has a flexible NoSQL style data model; a query language that
-supports a wide range of queries; a scalable runtime; partitioned,
+storage and analysis, and other use cases related to Big Data. AsterixDB has a flexible NoSQL style data model; a query language that supports a wide range of queries; a scalable runtime; partitioned,
 LSM-based data storage and indexing (including B+ -tree, R-tree,
 and text indexes); support for external as well as natively stored
 data; a rich set of built-in types; support for fuzzy, spatial, and tem-
