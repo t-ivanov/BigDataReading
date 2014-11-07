@@ -31,17 +31,43 @@ List of papers, reports and links to materials on Big Data and related topics.
 
 ## <a name='nosql'> NoSQL
 
-* [(basics)NoSQL Databases] (http://www.christof-strauch.de/nosqldbs.pdf)
-* [(book)Cassandra: The Definitive Guide] (http://filepi.com/i/R1Cuxhb)
+* [(basics) NoSQL Databases] (http://www.christof-strauch.de/nosqldbs.pdf)
+* [(book) Cassandra: The Definitive Guide] (http://filepi.com/i/R1Cuxhb)
 
 ## <a name='big-data-man-sys'> Big Data Management Systems
+* [AsterixDB: A Scalable, Open Source BDMS] (http://www.vldb.org/pvldb/vol7/p1905-alsubaiee.pdf)
+
+AsterixDB is a new, full-function BDMS (Big Data Management
+System) with a feature set that distinguishes it from other platforms
+in today’s open source Big Data ecosystem. Its features make it
+well-suited to applications like web data warehousing, social data
+storage and analysis, and other use cases related to Big Data. Aster-
+ixDB has a flexible NoSQL style data model; a query language that
+supports a wide range of queries; a scalable runtime; partitioned,
+LSM-based data storage and indexing (including B+ -tree, R-tree,
+and text indexes); support for external as well as natively stored
+data; a rich set of built-in types; support for fuzzy, spatial, and tem-
+poral types and queries; a built-in notion of data feeds for ingestion
+of data; and transaction support akin to that of a NoSQL store.
+
+* [DataHub: Collaborative Data Science & Dataset Version Management at Scale] (http://arxiv.org/abs/1409.0798)
+
+Dataset Version Control System (DSVC), is a system for multi-
+version dataset management. DSVC’s goal is to provide a common
+substrate to enable data scientists to capture their modifications,
+minimize storage costs, use a declarative language to reason about
+versions, identify differences between versions, and share datasets
+with other scientists. Second, DATAHUB, is a hosted platform
+built on top of DSVC, that not only supports richer interaction ca-
+pabilities, but also provides a number of novel tools for data clean-
+ing, data search and integration, and data visualization tools. 
 
 ## <a name='processing-systems'> Processing Systems
 
 ## <a name='hadoop-ecosys'> Hadoop Ecosystem
 
-* [(book)Hadoop Operations - A Guide for Developers and Administrators] (http://filepi.com/i/tsRd73q)
-* [(book)Hadoop: The Definitive Guide, 3rd Edition] (http://filepi.com/i/8hYSHSh)
+* [(book) Hadoop Operations - A Guide for Developers and Administrators] (http://filepi.com/i/tsRd73q)
+* [(book) Hadoop: The Definitive Guide, 3rd Edition] (http://filepi.com/i/8hYSHSh)
 
 ## <a name='sql-on-hadoop'> SQL-on-Hadoop
 
