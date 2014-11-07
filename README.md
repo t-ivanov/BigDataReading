@@ -20,8 +20,44 @@ List of papers, reports and links to materials on Big Data and related topics.
 ## <a name='general'> General
 
 * [Toward Scalable Systems for Big Data Analytics A Technology Tutorial] (http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6842585)
+* [The Family of MapReduce and Large Scale Data Processing Systems] (http://arxiv.org/pdf/1302.2966.pdf)
+
 
 ## <a name='page-formats'> Block/Page Formats
+
+
+* [(DSM) A decomposition storage model] (http://www3.in.tum.de/teaching/ws0506/MMDBMS/download/decomposition-storage-model.pdf)
+
+This report  examines  the relative  advantages of  a storage  model  based  on decomposition  (of community  view  relations  into  binary  relations containing  a surrogate  and  one attribute) over conventional  n-ary  storage  models.
+
+* [(PAX) Weaving Relations for Cache Performance] (http://www.vldb.org/conf/2001/P169.pdf)
+
+Relational database systems have traditionally optimzed for I/O performance and organized records sequentially on disk pages using the N-ary Storage Model (NSM) (a.k.a., slotted pages). Recent research, however, indicates that cache utilization and performance is becoming increasingly important on modern platforms. In this paper, we first demonstrate that in-page data placement is the key to high cache performance and that NSM exhibits low cache utilization on modern platforms. Next, we propose a new data organization model called PAX (Partition Attributes Across), that significantly improves cache performance by grouping together all values of each attribute within each page. Because PAX only affects layout inside the pages, it incurs no storage penalty and does not affect I/O behavior. According to our experimental results, when compared to NSM (a) PAX exhibits superior cache and memory bandwidth utilization, saving at least 75% of NSM’s stall time due to data cache accesses, (b) range selection queries and updates on memory-resident relations execute 17-25% faster, and (c) TPC-H queries involving I/O execute 11-48% faster.
+
+* [Column-Stores vs. Row-Stores: How Different Are They Really?] (http://www.cse.iitb.ac.in/dbms/Data/Courses/CS632/2013/Papers/sigmod08-columstore-abadi.pdf)
+
+* [(HPL) A hybrid page layout integrating PAX and NSM] (http://www.hpl.hp.com/techreports/2012/HPL-2012-240.pdf)
+
+The present paper explores a hybrid page layout (HPL) that aims to combine the advantages of NSM and PAX. Predicate evaluation in large scan queries have the same number of cache faults as PAX, and space management uses two data areas growing towards each other. Moreover, the design defines a continuum between NSM and PAX in order to support both efficient scans and efficient insertions and updates.
+This design is equally applicable to cache lines within RAM memory (the original design goal of PAX) and to small pages on flash storage within large disk pages. Our experimental evaluation is based on an implementation in the former environment. It demonstrates that the HPL design scans almost as fast as the scan-optimized PAX layout and updates almost as fast as the update-optimized NSM layout, i.e., it is competitive with both in their best use cases. 
+
+* [Column-Oriented Storage Techniques for MapReduce] (http://arxiv.org/ftp/arxiv/papers/1105/1105.4252.pdf)
+
+* [Trojan Data Layouts: Right Shoes for a Running Elephant] (https://infosys.uni-saarland.de/publications/JQD11.pdf)
+
+* [Dremel: Interactive Analysis of Web-Scale Datasets] (http://ftp.cs.duke.edu/courses/cps296.4/compsci590.4/fall13/838-CloudPapers/Dremel.pdf) & [Parquet] (http://parquet.incubator.apache.org/) 
+ 
+Apache Parquet is a columnar storage format available to any project in the Hadoop ecosystem, regardless of the choice of data processing framework, data model or programming language.
+
+* [RCFile: A Fast and Space-efficient Data Placement Structure in MapReduce-based Warehouse Systems] (http://web.cse.ohio-state.edu/hpcs/WWW/HTML/publications/papers/TR-11-4.pdf)
+
+MapReduce-based data warehouse systems are playing important roles of supporting big data analytics to understand quickly the dynamics of user behavior trends and their needs in typical Web service providers and social network sites
+(e.g., Facebook). In such a system, the data placement structure is a critical factor that can affect the warehouse performance in a fundamental way. Based on our observations and analysis of Facebook production systems, we have characterized four requirements for the data placement structure: (1) fast data loading, (2) fast query processing, (3) highly efficient storage space utilization, and (4) strong adaptivity to highly dynamic workload patterns. We have examined three commonly accepted data placement structures in conventional databases, namely row-stores,column-stores, and hybrid-stores in the context of large data analysis using MapReduce. We show that they are not very suitable for big data processing in distributed systems. In this paper, we present a big data placement structure called RCFile
+(Record Columnar File) and its implementation in the Hadoop system. With intensive experiments, we show the effectiveness of RCFile in satisfying the four requirements. RCFile has been chosen in Facebook data warehouse system as the default option. It has also been adopted by Hive and Pig, the two most widely used data analysis systems developed in Facebook and Yahoo!
+
+* [(ORC File) Major Technical Advancements in Apache Hive] (http://web.cse.ohio-state.edu/hpcs/WWW/HTML/publications/papers/TR-14-2.pdf)
+
+
 
 ## <a name='storage-systems'> Storage Systems
 
