@@ -1,7 +1,7 @@
 Big Data Reading Materials
 ==============
 
-List of papers, reports and links of materials on Big Data and related topics.
+List of papers, reports and links to materials on Big Data and related topics.
 
 ## <a name='TOC'>Table of Contents</a>
 
@@ -39,6 +39,9 @@ List of papers, reports and links of materials on Big Data and related topics.
 ## <a name='processing-systems'> Processing Systems
 
 ## <a name='hadoop-ecosys'> Hadoop Ecosystem
+
+* [(book)Hadoop Operations - A Guide for Developers and Administrators] (http://filepi.com/i/tsRd73q)
+* [(book)Hadoop: The Definitive Guide, 3rd Edition] (http://filepi.com/i/8hYSHSh)
 
 ## <a name='sql-on-hadoop'> SQL-on-Hadoop
 
