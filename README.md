@@ -168,7 +168,9 @@ Log processing has become a critical component of the data pipeline for consumer
 ## <a name='benchmarking'> Big Data Benchmarks
 
 * [The HiBench benchmark suite: Characterization of the MapReduce-based data analysis] (https://github.com/intel-hadoop/HiBench/blob/8a8fba75a1055c5f72b0834f13e66275ca788a76/WISS10_conf_full_011.pdf) &  [HiBench: A Representative and Comprehensive Hadoop Benchmark Suite] (http://clds.sdsc.edu/sites/clds.sdsc.edu/files/wbdb2012/papers/WBDB2012Paper38Gowda.pdf)
+
 * [Bigdatabench: A big data benchmark suite from internet services] (http://arxiv.org/abs/1401.1406)
+
 * [Bigbench: Towards an industry standard benchmark for big data analytics] (http://grail.csuohio.edu/~sschung/cis611/BigBenchmarkSig2014-ghazal.pdf)
 * [BigBench Specification V0. 1] (http://www.msrg.org/publications/pdf_files/2013/RablWBDB22013-BigBench_Specification_V0.1.pdf)
 * [A BigBench Implementation in the Hadoop Ecosystem] ()
