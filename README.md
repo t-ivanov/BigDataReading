@@ -85,6 +85,13 @@ data; a rich set of built-in types; support for fuzzy, spatial, and tem-
 poral types and queries; a built-in notion of data feeds for ingestion
 of data; and transaction support akin to that of a NoSQL store.
 
+* [Mesa: Geo-Replicated, Near Real-Time, Scalable Data Warehousing] (http://www.vldb.org/pvldb/vol7/p1259-gupta.pdf)
+
+Mesa is a highly scalable analytic data warehousing system that stores critical measurement data related to Google’s
+Internet advertising business. Mesa is designed to satisfy a complex and challenging set of user and systems requirements, including near real-time data ingestion and queryability, as well as high availability, reliability, fault tolerance,and scalability for large data and query volumes. Specifically, Mesa handles petabytes of data, processes millions of row updates per second, and serves billions of queries that fetch trillions of rows per day. Mesa is geo-replicated across multiple datacenters and provides consistent and repeatable query answers at low latency, even when an entire datacenter fails. This paper presents the Mesa system and reports the performance and scale that it achieves.
+
+
+
 * [DataHub: Collaborative Data Science & Dataset Version Management at Scale] (http://arxiv.org/abs/1409.0798)
 
 Dataset Version Control System (DSVC), is a system for multi-
