@@ -171,7 +171,6 @@ Log processing has become a critical component of the data pipeline for consumer
 
 * [Bigdatabench: A big data benchmark suite from internet services] (http://arxiv.org/abs/1401.1406)
 
-* [Bigbench: Towards an industry standard benchmark for big data analytics] (http://grail.csuohio.edu/~sschung/cis611/BigBenchmarkSig2014-ghazal.pdf)
-* [BigBench Specification V0. 1] (http://www.msrg.org/publications/pdf_files/2013/RablWBDB22013-BigBench_Specification_V0.1.pdf)
+* [Bigbench: Towards an industry standard benchmark for big data analytics] (http://grail.csuohio.edu/~sschung/cis611/BigBenchmarkSig2014-ghazal.pdf) & [BigBench Specification V0. 1] (http://www.msrg.org/publications/pdf_files/2013/RablWBDB22013-BigBench_Specification_V0.1.pdf)
 * [A BigBench Implementation in the Hadoop Ecosystem] ()
 * [Discussion of BigBench:A Proposed Industry Standard Performance Benchmark for Big Data] (http://www.msrg.org/publications/pdf_files/2014/TPCTC2014-Rabl-Discussion_of_BigBench:_A_Prop.pdf)
