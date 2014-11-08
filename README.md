@@ -21,6 +21,10 @@ List of papers, reports and links to materials on Big Data and related topics.
 
 * [Toward Scalable Systems for Big Data Analytics A Technology Tutorial] (http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6842585)
 * [The Family of MapReduce and Large Scale Data Processing Systems] (http://arxiv.org/pdf/1302.2966.pdf)
+* [Survey of Apache Big Data Stack] (http://grids.ucs.indiana.edu/ptliupages/publications/survey_apache_big_data_stack.pdf)
+* [The Beckman Report on Database Research - 2013] (http://beckman.cs.wisc.edu/)
+
+Every few years a group of database researchers meets to discuss the state of database research, its impact on practice, and important new directions. This report summarizes the discussion and conclusions of the eighth such meeting, held October 14-15, 2013 in Irvine, California. It observes that Big Data has now become a defining challenge of our time, and that the database research community is uniquely positioned to address it, with enormous opportunities to make transformative impact. To do so, the report recommends significantly more attention to five research areas: scalable big/fast data infrastructures; coping with diversity in the data management landscape; end-to-end processing and understanding of data; cloud services; and managing the diverse roles of people in the data life cycle. 
 
 
 ## <a name='page-formats'> Block/Page Formats
@@ -129,6 +133,16 @@ In this paper, we summarize the design, development,and current state of deploym
 the flexibility claims by discussing the porting of several programming frameworks onto YARN viz. Dryad, Giraph, Hoya, Hadoop MapReduce, REEF, Spark, Storm, Tez.
 
 ## <a name='processing-systems'> Processing Systems
+
+* [Spark: cluster computing with working sets] (http://static.usenix.org/legacy/events/hotcloud10/tech/full_papers/Zaharia.pdf)
+
+MapReduce and its variants have been highly successful in implementing large-scale data-intensive applications on commodity clusters. However, most of these systems are built around an acyclic data flow model that is not suitable for other popular applications. This paper focuses on one such class of applications: those that reuse a working set of data across multiple parallel operations. This includes many iterative machine learning algorithms, as well as interactive data analysis tools. We propose a new framework called Spark that supports these applications while retaining the scalability and fault tolerance of MapReduce. To achieve these goals, Spark introduces an abstraction called resilient distributed datasets (RDDs). An RDD is a read-only collection of objects partitioned across a set of machines that can be rebuilt if a partition is lost. Spark can outperform Hadoop by 10x in iterative machine learning jobs, and can be used to interactively query a 39 GB dataset with sub-second response time.
+
+* [Resilient distributed datasets: A fault-tolerant abstraction for in-memory cluster computing] (https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final138.pdf)
+
+We present Resilient Distributed Datasets (RDDs), a distributed memory abstraction that lets programmers perform in-memory computations on large clusters in a fault-tolerant manner. RDDs are motivated by two types of applications that current computing frameworks handle inefficiently: iterative algorithms and interactive data mining tools. In both cases, keeping data in memory can improve performance by an order of magnitude. To achieve fault tolerance efficiently, RDDs provide a restricted form of shared memory, based on coarse-grained transformations rather than fine-grained updates to shared state. However, we show that RDDs are expressive enough to capture a wide class of computations, including recent specialized programming models for iterative jobs, such as Pregel, and new applications that these models do not capture. We have implemented RDDs in a system called Spark, which we evaluate through a variety of user applications and benchmarks.
+
+* [(PhD Thesis Zaharia) An Architecture for Fast and General Data Processing on Large Clusters] (http://www.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-12.pdf)
 
 ## <a name='hadoop-ecosys'> Hadoop Ecosystem
 
