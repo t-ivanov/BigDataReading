@@ -11,7 +11,7 @@ List of papers, reports and links to materials on Big Data and related topics.
   4. [NoSQL](#nosql)
   5. [Big Data Management Systems](#big-data-man-sys)
   6. [Resource Management](#resource-management)
-  7. [Processing Systems](#processing-systems)
+  7. [Parallel Processing Systems](#processing-systems)
   8. [Hadoop Ecosystem](#hadoop-ecosys)
   9. [SQL-on-Hadoop](#sql-on-hadoop)
   10. [Messaging/Event Systems](#messaging-systems)
@@ -54,9 +54,11 @@ This design is equally applicable to cache lines within RAM memory (the original
 
 ## <a name='storage-systems'> Storage Systems
 
-* [The Google File System](http://research.google.com/archive/gfs.html) (2003) and [Bigtable: A Distributed Storage System for Structured Data](http://research.google.com/archive/bigtable.html) (2006): Two core components of Google's data infrastructure. GFS is an append-only distributed file system for large sequential reads (data-intensive applications). BigTable is high-performance distributed data store that builds on GFS. One way to think about it is that GFS is optimized for high throughput, and BigTable explains how to build a low-latency data store on top of GFS. Some of these might have been replaced by newer proprietary technologies internal to Google, but the ideas stand.
+* [The Google File System](http://research.google.com/archive/gfs.html) (2003) & [Bigtable: A Distributed Storage System for Structured Data](http://research.google.com/archive/bigtable.html) (2006): Two core components of Google's data infrastructure. GFS is an append-only distributed file system for large sequential reads (data-intensive applications). BigTable is high-performance distributed data store that builds on GFS. One way to think about it is that GFS is optimized for high throughput, and BigTable explains how to build a low-latency data store on top of GFS. Some of these might have been replaced by newer proprietary technologies internal to Google, but the ideas stand.
 
 * [HDFS Architecture Guide] (http://pristinespringsangus.com/hadoop/docs/hdfs_design.pdf) & [The hadoop distributed file system] (The hadoop distributed file system): The Hadoop Distributed File System (HDFS) is designed to store very large data sets reliably, and to stream those data sets at high bandwidth to user applications. In a large cluster, thousands of servers both host directly attached storage and execute user application tasks. By distributing storage and computation across many servers, the resource can grow with demand while remaining economical at every size. We describe the architecture of HDFS and report on experience using HDFS to manage 25 petabytes of enterprise data at Yahoo!.
+
+* [C-Store: A Column-oriented DBMS](http://www.cs.berkeley.edu/~rxin/db-papers/C-Store.pdf) (2005) & [The Vertica Analytic Database: C-Store 7 Years Later](http://vldb.org/pvldb/vol5/p1790_andrewlamb_vldb2012.pdf) (2012): C-Store is an influential, academic system done by the folks in New England. Vertica is the commercial incarnation of C-Store. 
 
 * [Tachyon: Reliable, Memory Speed Storage for Cluster Computing Frameworks] (http://www.cs.berkeley.edu/~haoyuan/papers/2014_socc_tachyon.pdf) & [Tachyon: Memory Throughput I/O for Cluster Computing Frameworks] (http://www.eecs.berkeley.edu/~alig/papers/tachyon-workshop.pdf): Tachyon is a distributed file system enabling reliable data sharing at memory speed across cluster computing frameworks. While caching today improves read workloads, writes are either network or disk bound, as replication is
 used for fault-tolerance. Tachyon eliminates this bottleneck by pushing lineage, a well-known technique, into the storage layer. The key challenge in making a long-running lineage-based storage system is timely data recovery in case of failures. Tachyon addresses this issue by introducing a checkpointing algorithm that guarantees bounded recovery cost and resource allocation strategies for recomputation under commonly used resource schedulers. Our evaluation shows that Tachyon outperforms in-memory HDFS by 110x for writes. It also improves the end-to-end latency of a realistic workflow by 4x. Tachyon is open source and is deployed at multiple companies.
@@ -74,21 +76,14 @@ commodity servers, while providing highly available service with no single point
 * [(book) Cassandra: The Definitive Guide] (http://filepi.com/i/R1Cuxhb)
 
 ## <a name='big-data-man-sys'> Big Data Management Systems
-* [AsterixDB: A Scalable, Open Source BDMS] (http://www.vldb.org/pvldb/vol7/p1905-alsubaiee.pdf): AsterixDB is a new, full-function BDMS (Big Data Management
-System) with a feature set that distinguishes it from other platforms
-in today’s open source Big Data ecosystem. Its features make it
-well-suited to applications like web data warehousing, social data
-storage and analysis, and other use cases related to Big Data. AsterixDB has a flexible NoSQL style data model; a query language that supports a wide range of queries; a scalable runtime; partitioned,
-LSM-based data storage and indexing (including B+ -tree, R-tree,
-and text indexes); support for external as well as natively stored
-data; a rich set of built-in types; support for fuzzy, spatial, and tem-
-poral types and queries; a built-in notion of data feeds for ingestion
-of data; and transaction support akin to that of a NoSQL store.
+
+* [Spanner](http://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf) (2012): Spanner is "a scalable, multi-version, globally distributed, and synchronously replicated database". The linchpin that allows all this functionality is the TrueTime API which lets Spanner order events between nodes without having them communicate. [There is some speculation that the TrueTime API is very similar to a vector clock but each node has to store less data](http://www.cse.buffalo.edu/~demirbas/publications/augmentedTime.pdf). Sadly, a paper on TrueTime is promised, but hasn't yet been released.
+
+* [AsterixDB: A Scalable, Open Source BDMS] (http://www.vldb.org/pvldb/vol7/p1905-alsubaiee.pdf): AsterixDB is a new, full-function BDMS (Big Data Management System) with a feature set that distinguishes it from other platforms in today’s open source Big Data ecosystem. Its features make it well-suited to applications like web data warehousing, social data storage and analysis, and other use cases related to Big Data. AsterixDB has a flexible NoSQL style data model; a query language that supports a wide range of queries; a scalable runtime; partitioned, LSM-based data storage and indexing (including B+ -tree, R-tree, and text indexes); support for external as well as natively stored
+data; a rich set of built-in types; support for fuzzy, spatial, and temporal types and queries; a built-in notion of data feeds for ingestion of data; and transaction support akin to that of a NoSQL store.
 
 * [Mesa: Geo-Replicated, Near Real-Time, Scalable Data Warehousing] (http://www.vldb.org/pvldb/vol7/p1259-gupta.pdf): Mesa is a highly scalable analytic data warehousing system that stores critical measurement data related to Google’s
 Internet advertising business. Mesa is designed to satisfy a complex and challenging set of user and systems requirements, including near real-time data ingestion and queryability, as well as high availability, reliability, fault tolerance,and scalability for large data and query volumes. Specifically, Mesa handles petabytes of data, processes millions of row updates per second, and serves billions of queries that fetch trillions of rows per day. Mesa is geo-replicated across multiple datacenters and provides consistent and repeatable query answers at low latency, even when an entire datacenter fails. This paper presents the Mesa system and reports the performance and scale that it achieves.
-
-
 
 * [DataHub: Collaborative Data Science & Dataset Version Management at Scale] (http://arxiv.org/abs/1409.0798): Dataset Version Control System (DSVC), is a system for multi-version dataset management. DSVC’s goal is to provide a common substrate to enable data scientists to capture their modifications, minimize storage costs, use a declarative language to reason about versions, identify differences between versions, and share datasets with other scientists. Second, DATAHUB, is a hosted platform built on top of DSVC, that not only supports richer interaction capabilities, but also provides a number of novel tools for data cleaning, data search and integration, and data visualization tools. 
 
@@ -103,7 +98,11 @@ Internet advertising business. Mesa is designed to satisfy a complex and challen
 * [Apache Hadoop YARN: yet another resource negotiator] (https://54e57bc8-a-62cb3a1a-s-sites.googlegroups.com/site/2013socc/home/program/a5-vavilapalli.pdf?attachauth=ANoY7crrl3LueZKiJV4CAYJgK2jv4N8iE2Asqa9wwGeKUwhQVSmfDnvX9Iqb6cNQth2DtlMG99O5hJTOTkJkCUl0r6txC3JVaumyuAe977DaELZufXYPul83aJRSdIt_fotZMNspdOQjdqIfJ4Vb6Yktw_i5sAcY1GySSIJUaY3VLLIu2h7N8lqgPf484j-DgvLiICXVg5GdqjytjtqLcP8DuLSOiOZOMzDhYdObvvI_9KZa9WUoJIY%3D&attredirects=0): The initial design of Apache Hadoop [1] was tightly focused on running massive, MapReduce jobs to process a web crawl. For increasingly diverse companies, Hadoop has become the data and computational agora — the de facto place where data and computational resources are shared and accessed. This broad adoption and ubiquitous
 usage has stretched the initial design well beyond its intended target, exposing two key shortcomings: 1) tight coupling of a specific programming model with the resource management infrastructure, forcing developers to abuse the MapReduce programming model, and 2) centralized handling of jobs’ control flow, which resulted in endless scalability concerns for the scheduler. In this paper, we summarize the design, development,and current state of deployment of the next generation of Hadoop’s compute platform: YARN. The new architecture we introduced decouples the programming model from the resource management infrastructure, and delegates many scheduling functions (e.g., task fault-tolerance) to per-application components. We provide experimental evidence demonstrating the improvements we made, confirm improved efficiency by reporting the experience of running YARN on production environments (including 100% of Yahoo! grids), and confirm the flexibility claims by discussing the porting of several programming frameworks onto YARN viz. Dryad, Giraph, Hoya, Hadoop MapReduce, REEF, Spark, Storm, Tez.
 
-## <a name='processing-systems'> Processing Systems
+## <a name='processing-systems'> Parallel Processing Systems
+
+* [MapReduce: Simplified Data Processing on Large Clusters](http://research.google.com/archive/mapreduce.html) (2004): MapReduce is both a programming model (borrowed from an old concept in functional programming) and a system at Google for distributed data-intensive computation. The programming model is so simple yet expressive enough to capture a wide range of programming needs. The system, coupled with the model, is fault-tolerant and scalable. It is probably fair to say that half of the academia are now working on problems heavily influenced by MapReduce.
+
+* [Dryad: Distributed Data-Parallel Programs from Sequential Building Blocks] (http://cs.brown.edu/~debrabant/cis570-website/papers/dryad.pdf) (2007): Dryad is a programming model developed at Microsoft that enables large scale dataflow programming. "The fundamental difference between the \[MapReduce and Dryad\] is that a Dryad application may specify an arbitrary communication DAG rather than requiring a sequence of map/distribute/sort/reduce operations". 
 
 * [Spark: cluster computing with working sets] (http://static.usenix.org/legacy/events/hotcloud10/tech/full_papers/Zaharia.pdf): MapReduce and its variants have been highly successful in implementing large-scale data-intensive applications on commodity clusters. However, most of these systems are built around an acyclic data flow model that is not suitable for other popular applications. This paper focuses on one such class of applications: those that reuse a working set of data across multiple parallel operations. This includes many iterative machine learning algorithms, as well as interactive data analysis tools. We propose a new framework called Spark that supports these applications while retaining the scalability and fault tolerance of MapReduce. To achieve these goals, Spark introduces an abstraction called resilient distributed datasets (RDDs). An RDD is a read-only collection of objects partitioned across a set of machines that can be rebuilt if a partition is lost. Spark can outperform Hadoop by 10x in iterative machine learning jobs, and can be used to interactively query a 39 GB dataset with sub-second response time.
 
@@ -117,6 +116,10 @@ usage has stretched the initial design well beyond its intended target, exposing
 * [(book) Hadoop: The Definitive Guide, 3rd Edition] (http://filepi.com/i/8hYSHSh)
 
 ## <a name='sql-on-hadoop'> SQL-on-Hadoop
+
+* [Shark: SQL and Rich Analytics at Scale](https://amplab.cs.berkeley.edu/publication/shark-sql-and-rich-analytics-at-scale/) (2013): Describes the Shark system, which is the SQL engine built on top of Spark. More importantly, the paper discusses why previous SQL on Hadoop/MapReduce query engines were slow.
+
+
 
 ## <a name='messaging-systems'> Messaging/Event Systems
 
