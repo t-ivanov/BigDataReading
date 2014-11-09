@@ -65,9 +65,18 @@ MapReduce-based data warehouse systems are playing important roles of supporting
 
 ## <a name='storage-systems'> Storage Systems
 
+* [HDFS Architecture Guide] (http://pristinespringsangus.com/hadoop/docs/hdfs_design.pdf) & [The hadoop distributed file system] (The hadoop distributed file system)
+The Hadoop Distributed File System (HDFS) is designed to store very large data sets reliably, and to stream those data sets at high bandwidth to user applications. In a large cluster, thousands of servers both host directly attached storage and execute user application tasks. By distributing storage and computation across many servers, the resource can grow with demand while remaining economical at every size. We describe the architecture of HDFS and report on experience using HDFS to manage 25 petabytes of enterprise data at Yahoo!.
+
+* [Tachyon: Reliable, Memory Speed Storage for Cluster Computing Frameworks] (http://www.cs.berkeley.edu/~haoyuan/papers/2014_socc_tachyon.pdf) & [Tachyon: Memory Throughput I/O for Cluster Computing Frameworks] (http://www.eecs.berkeley.edu/~alig/papers/tachyon-workshop.pdf)
+
+Tachyon is a distributed file system enabling reliable data sharing at memory speed across cluster computing frameworks. While caching today improves read workloads, writes are either network or disk bound, as replication is
+used for fault-tolerance. Tachyon eliminates this bottleneck by pushing lineage, a well-known technique, into the storage layer. The key challenge in making a long-running lineage-based storage system is timely data recovery in case of failures. Tachyon addresses this issue by introducing a checkpointing algorithm that guarantees bounded recovery cost and resource allocation strategies for recomputation under commonly used resource schedulers. Our evaluation shows that Tachyon outperforms in-memory HDFS by 110x for writes. It also improves the end-to-end latency of a realistic workflow by 4x. Tachyon is open source and is deployed at multiple companies.
+
 ## <a name='nosql'> NoSQL
 
 * [(basics) NoSQL Databases] (http://www.christof-strauch.de/nosqldbs.pdf)
+* [Bigtable: A Distributed Storage System for Structured Data] (http://www3.in.tum.de/teaching/ss10/WebDatabases/bigtable-osdi06.pdf)
 * [Cassandra-A Decentralized Structured Storage System] (http://www.cs.ucr.edu/~tsotras/cs260/F12/cassandra.pdf)
 
 Cassandra is a distributed storage system for managing very large amounts of structured data spread out across many
