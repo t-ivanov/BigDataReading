@@ -66,6 +66,7 @@ MapReduce-based data warehouse systems are playing important roles of supporting
 ## <a name='storage-systems'> Storage Systems
 
 * [HDFS Architecture Guide] (http://pristinespringsangus.com/hadoop/docs/hdfs_design.pdf) & [The hadoop distributed file system] (The hadoop distributed file system)
+
 The Hadoop Distributed File System (HDFS) is designed to store very large data sets reliably, and to stream those data sets at high bandwidth to user applications. In a large cluster, thousands of servers both host directly attached storage and execute user application tasks. By distributing storage and computation across many servers, the resource can grow with demand while remaining economical at every size. We describe the architecture of HDFS and report on experience using HDFS to manage 25 petabytes of enterprise data at Yahoo!.
 
 * [Tachyon: Reliable, Memory Speed Storage for Cluster Computing Frameworks] (http://www.cs.berkeley.edu/~haoyuan/papers/2014_socc_tachyon.pdf) & [Tachyon: Memory Throughput I/O for Cluster Computing Frameworks] (http://www.eecs.berkeley.edu/~alig/papers/tachyon-workshop.pdf)
