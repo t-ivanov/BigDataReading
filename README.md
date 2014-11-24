@@ -70,6 +70,7 @@ used for fault-tolerance. Tachyon eliminates this bottleneck by pushing lineage,
 ## <a name='nosql'> NoSQL
 
 * [(basics) NoSQL Databases] (http://www.christof-strauch.de/nosqldbs.pdf) (2011)
+* [Scalable SQL and NoSQL Data Stores] (http://www.cattell.net/datastores/Datastores.pdf) (2011)
 * [Bigtable: A Distributed Storage System for Structured Data] (http://www3.in.tum.de/teaching/ss10/WebDatabases/bigtable-osdi06.pdf) (2006)
 
 * [Chord: A Scalable Peer-to-peer Lookup Service for Internet Applications](http://www.cs.berkeley.edu/~rxin/db-papers/Chord-DHT.pdf) (2001) & [Dynamo: Amazon’s Highly Available Key-value Store](http://www.cs.berkeley.edu/~rxin/db-papers/Dynamo.pdf) (2007): Chord was born in the days when distributed hash tables was a hot research. It does one thing, and does it really well: how to look up the location of a key in a completely distributed setting (peer-to-peer) using consistent hashing. The Dynamo paper explains how to build a distributed key-value store using Chord. Note some design decisions change from Chord to Dynamo, e.g. finger table O(logN) vs O(N), because in Dynamo's case, Amazon has more control over nodes in a data center, while Chord assumes peer-to-peer nodes in wide area networks.
