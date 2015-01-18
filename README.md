@@ -140,6 +140,7 @@ catalog, Hive-Metastore, containing schemas and statistics, which is useful in d
 
 * [Shark: SQL and Rich Analytics at Scale](https://amplab.cs.berkeley.edu/publication/shark-sql-and-rich-analytics-at-scale/) (2013): Describes the Shark system, which is the SQL engine built on top of Spark. More importantly, the paper discusses why previous SQL on Hadoop/MapReduce query engines were slow.
 
+* [Impala: A Modern, Open-Source SQL Engine for Hadoop](http://www.cidrdb.org/cidr2015/Papers/CIDR15_Paper28.pdf) (2015): Cloudera Impala is a modern, open-source MPP SQL engine architected from the ground up for the Hadoop data processing environment. Impala provides low latency and high concurrency for BI/analytic read-mostly queries on Hadoop, not delivered by batch frameworks such as Apache Hive. This paper presents Impala from a user's perspective, gives an overview of its architecture and main components and brie y demonstrates its superior performance compared against other popular SQL-on-Hadoop systems.
 
 ## <a name='messaging-systems'> Messaging/Event Systems
 
@@ -160,8 +161,14 @@ catalog, Hive-Metastore, containing schemas and statistics, which is useful in d
 * [Bigdatabench: A big data benchmark suite from internet services] (http://arxiv.org/abs/1401.1406)
 
 * [Bigbench: Towards an industry standard benchmark for big data analytics] (http://grail.csuohio.edu/~sschung/cis611/BigBenchmarkSig2014-ghazal.pdf) & [BigBench Specification V0. 1] (http://www.msrg.org/publications/pdf_files/2013/RablWBDB22013-BigBench_Specification_V0.1.pdf)
-* [A BigBench Implementation in the Hadoop Ecosystem] ()
+
+* [A BigBench Implementation in the Hadoop Ecosystem] (http://books.google.de/books?hl=en&lr=&id=CHvABAAAQBAJ&oi=fnd&pg=PA3&dq=A+BigBench+Implementation+in+the+Hadoop+Ecosystem&ots=91SWsTm1oN&sig=BeE89Ez_Idw-tgt7ktMjCvQGA_8#v=onepage&q=A%20BigBench%20Implementation%20in%20the%20Hadoop%20Ecosystem&f=false)
+
 * [Discussion of BigBench:A Proposed Industry Standard Performance Benchmark for Big Data] (http://www.msrg.org/publications/pdf_files/2014/TPCTC2014-Rabl-Discussion_of_BigBench:_A_Prop.pdf)
+
+* [ALOJA: a Systematic Study of Hadoop Deployment Variables to Enable Automated Characterization of Cost-Effectiveness](https://github.com/Aloja/aloja/blob/master/publications/BSC-MSR_ALOJA.pdf) (2014): This article presents the ALOJA project, an initiative to produce mechanisms for an automated characterization of cost-effectiveness of Hadoop deployments
+and reports its initial results. ALOJA is the latest phase of a long-term collaborative engagement between BSC and Microsoft which, over the past 6 years has explored a range of different aspects of computing systems, software technologies and performance profiling. While during the last 5 years, Hadoop has become the de-facto platform for Big Data deployments, still little is understood of how the different layers of the software and hardware deployment options affects its performance. Early ALOJA results show that Hadoop’s runtime performance, and therefore its price, are critically affected by relatively simple software and hardware configuration choices e.g., number of mappers, compression, or volume configuration. Project ALOJA presents a vendor-neutral repository featuring over 5000 Hadoop runs, a test bed, and tools to evaluate the cost-effectiveness of different hardware, parameter tuning, and Cloud services for Hadoop. As few organizations have the time or performance profiling expertise, we expect our growing repository will benefit Hadoop customers to meet their Big Data application needs. ALOJA seeks to provide both knowledge and an online service to with which users make better informed configuration choices for their Hadoop compute infrastructure whether this be on-premise or cloud-based.
+The initial version of ALOJA’s Web application and sources are available at http://hadoop.bsc.es
 
 ## <a name='reading-lists'> External Reading Lists
 
