@@ -14,9 +14,10 @@ List of papers, reports and links to materials on Big Data and related topics.
   7. [Parallel Processing Systems](#processing-systems)
   8. [Hadoop Ecosystem](#hadoop-ecosys)
   9. [SQL-on-Hadoop](#sql-on-hadoop)
-  10. [Messaging/Event Systems](#messaging-systems)
-  11. [Big Data Benchmarks](#benchmarking)
-  12. [External Reading Lists] (#reading-lists)
+  10. [Stream/Message Processing](#stream-processing)
+  11. [Graph Processing](#graph-processing)
+  12. [Big Data Benchmarks](#benchmarking)
+  13. [External Reading Lists] (#reading-lists)
 
 ## <a name='general'> General
 
@@ -142,7 +143,7 @@ catalog, Hive-Metastore, containing schemas and statistics, which is useful in d
 
 * [Impala: A Modern, Open-Source SQL Engine for Hadoop](http://www.cidrdb.org/cidr2015/Papers/CIDR15_Paper28.pdf) (2015): Cloudera Impala is a modern, open-source MPP SQL engine architected from the ground up for the Hadoop data processing environment. Impala provides low latency and high concurrency for BI/analytic read-mostly queries on Hadoop, not delivered by batch frameworks such as Apache Hive. This paper presents Impala from a user's perspective, gives an overview of its architecture and main components and brie y demonstrates its superior performance compared against other popular SQL-on-Hadoop systems.
 
-## <a name='messaging-systems'> Messaging/Event Systems
+## <a name='stream-processing'> Stream/Message Processing
 
 * [Kafka: a Distributed Messaging System for Log Processing] (http://research.microsoft.com/en-us/UM/people/srikanth/netdb11/netdb11papers/netdb11-final12.pdf) (2012): Log processing has become a critical component of the data pipeline for consumer internet companies. We introduce Kafka, a distributed messaging system that we developed for collecting and delivering high volumes of log data with low latency. Our system incorporates ideas from existing log aggregators and messaging systems, and is suitable for both offline and online message consumption. We made quite a few unconventional yet practical design choices in Kafka to make our system efficient and scalable. Our experimental results show that Kafka has superi or performance when compared to two popular messaging systems. We have been using Kafka in production for some time and it is processing hundreds of gigabytes of new data each day.
 
@@ -153,6 +154,9 @@ catalog, Hive-Metastore, containing schemas and statistics, which is useful in d
 * [Storm @ Twitter - paper] (http://dl.acm.org/citation.cfm?id=2595641)
 
 * [SAMOA: a platform for mining big data streams] (http://dl.acm.org/citation.cfm?id=2488042)
+
+## <a name='graph-processing'> Graph Processing
+
 
 ## <a name='benchmarking'> Big Data Benchmarks
 
