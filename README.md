@@ -165,6 +165,12 @@ previous systems, Spark SQL makes two main additions. First, it offers much tigh
 
 ## <a name='graph-processing'> Graph Processing
 
+* [GraphX: Graph Processing in a Distributed Dataflow Framework] (https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-gonzalez.pdf) (2014): In this paper we argue that many of the advantages of specialized graph processing systems can be recovered in a modern general-purpose distributed dataflow
+system. We introduce GraphX, an embedded graph processing framework built on top of Apache Spark, a widely
+used distributed dataflow system. GraphX presents a familiar composable graph abstraction that is sufficient to
+express existing graph APIs, yet can be implemented using only a few basic dataflow operators (e.g., join, map,
+group-by). To achieve performance parity with specialized graph systems, GraphX recasts graph-specific optimizations as distributed join optimizations and materialized view maintenance. 
+
 
 ## <a name='benchmarking'> Big Data Benchmarks
 
