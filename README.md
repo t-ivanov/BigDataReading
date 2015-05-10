@@ -136,7 +136,9 @@ usage has stretched the initial design well beyond its intended target, exposing
 ## <a name='hadoop-ecosys'> Hadoop Ecosystem
 
 * [(book) Hadoop Operations - A Guide for Developers and Administrators] (http://filepi.com/i/tsRd73q)
-* [(book) Hadoop: The Definitive Guide, 3rd Edition] (http://filepi.com/i/8hYSHSh)
+* [(book) Hadoop: The Definitive Guide, 4th Edition] (http://it-ebooks.info/book/5629/)
+* [(book) Programming Pig, by Alan Gates] (http://it-ebooks.info/book/1485/)
+* [(book) Programming Hive, by Capriolo, Wampler, and Rutherglen] (http://it-ebooks.info/book/941/)
 
 ## <a name='sql-on-hadoop'> SQL-on-Hadoop
 
