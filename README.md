@@ -23,6 +23,7 @@ List of papers, reports and links to materials on Big Data and related topics.
 
 ## <a name='basics'> Theoretical Basics
 * [Notes on Theory of Distributed Systems CS 465/565: Spring 2014, James Aspnes] (http://www.cs.yale.edu/homes/aspnes/classes/465/notes.pdf)
+* [Architecture of a Database System, Joseph M. Hellerstein, Michael Stonebraker and James Hamilton] (http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf)
 
 
 ## <a name='general'> General
