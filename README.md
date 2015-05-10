@@ -5,6 +5,7 @@ List of papers, reports and links to materials on Big Data and related topics.
 
 ## <a name='TOC'>Table of Contents</a>
 
+  0. [Theoretical Basics](#basics)
   1. [General](#general)
   2. [Block/Page Formats](#page-formats)
   3. [Storage Systems](#storage-systems)
@@ -19,6 +20,10 @@ List of papers, reports and links to materials on Big Data and related topics.
   12. [Big Data Benchmarks](#benchmarking)
   13. [Machine Learning](#machine_learning)
   14. [External Reading Lists] (#reading-lists)
+
+## <a name='basics'> Theoretical Basics
+* [Notes on Theory of Distributed Systems CS 465/565: Spring 2014, James Aspnes] (http://www.cs.yale.edu/homes/aspnes/classes/465/notes.pdf)
+
 
 ## <a name='general'> General
 
