@@ -145,6 +145,7 @@ We present a summary of the Borg system architecture and features, important des
 * [(book) Hadoop: The Definitive Guide, 4th Edition] (http://it-ebooks.info/book/5629/)
 * [(book) Programming Pig, by Alan Gates] (http://it-ebooks.info/book/1485/)
 * [(book) Programming Hive, by Capriolo, Wampler, and Rutherglen] (http://it-ebooks.info/book/941/)
+* [Spark Internals - Notes] (https://github.com/JerryLead/SparkInternals)
 
 ## <a name='sql-on-hadoop'> SQL-on-Hadoop
 
