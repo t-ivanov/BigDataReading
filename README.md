@@ -169,6 +169,13 @@ catalog, Hive-Metastore, containing schemas and statistics, which is useful in d
 * [Spark SQL: Relational Data Processing in Spark](https://amplab.cs.berkeley.edu/wp-content/uploads/2015/03/SparkSQLSigmod2015.pdf) (2015): Spark SQL is a new module in Apache Spark that integrates relational processing with Spark’s functional programming API. Built on our experience with Shark, Spark SQL lets Spark programmers leverage the benefits of relational processing (e.g., declarative queries and optimized storage), and lets SQL users call complex analytics libraries in Spark (e.g., machine learning). Compared to
 previous systems, Spark SQL makes two main additions. First, it offers much tighter integration between relational and procedural processing, through a declarative DataFrame API that integrates with procedural Spark code. Second, it includes a highly extensible optimizer, Catalyst, built using features of the Scala programming language, that makes it easy to add composable rules, control code generation, and define extension points. Using Catalyst, we have built a variety of features (e.g., schema inference for JSON, machine learning types, and query federation to external databases) tailored for the complex needs of modern data analysis. We see Spark SQL as an evolution of both SQL-on-Spark and of Spark itself, offering richer APIs and optimizations while keeping the benefits of the Spark programming model.
 
+*[An Empirical Performance Evaluation of Distributed SQL Query Engines](http://www.ds.ewi.tudelft.nl/~iosup/perf-distrib-sql-engines15icpe.pdf) (2015) + [Extended Technical Report](http://www.ds.ewi.tudelft.nl/fileadmin/pds/reports/2014/PDS-2014-002.pdf)(2014)
+
+*[A Study of SQL-on-Hadoop Systems](http://link.springer.com/chapter/10.1007/978-3-319-13021-7_12) (2014)
+
+*[Processing Big Data With SQL on Hadoop](http://www.sigs.de/download/tdwi_2015_muc/files/t4a-2_Albrecht.pdf) (TDWI 2015)
+
+*[SQL-on-Hadoop Tutorial](http://www.pandis.net/resources/SQL-on-Hadoop-Final.pdf) (VLDB 2015)
 
 ## <a name='stream-processing'> Stream/Message Processing
 
