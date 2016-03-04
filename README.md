@@ -177,6 +177,9 @@ previous systems, Spark SQL makes two main additions. First, it offers much tigh
 
 * [SQL-on-Hadoop Tutorial](http://www.pandis.net/resources/SQL-on-Hadoop-Final.pdf) (VLDB 2015)
 
+* [Workload Characterization and Optimization of TPC-H Queries on Apache Spark](http://domino.watson.ibm.com/library/CyberDig.nsf/papers/9AF3F3F4DE3E84D785257EE300249572/$File/RT0968.pdf) (2015)
+
+
 ## <a name='stream-processing'> Stream/Message Processing
 
 * [Kafka: a Distributed Messaging System for Log Processing] (http://research.microsoft.com/en-us/UM/people/srikanth/netdb11/netdb11papers/netdb11-final12.pdf) (2012): Log processing has become a critical component of the data pipeline for consumer internet companies. We introduce Kafka, a distributed messaging system that we developed for collecting and delivering high volumes of log data with low latency. Our system incorporates ideas from existing log aggregators and messaging systems, and is suitable for both offline and online message consumption. We made quite a few unconventional yet practical design choices in Kafka to make our system efficient and scalable. Our experimental results show that Kafka has superi or performance when compared to two popular messaging systems. We have been using Kafka in production for some time and it is processing hundreds of gigabytes of new data each day.
