@@ -7,7 +7,7 @@ List of papers, reports and links to materials on Big Data and related topics.
 
   0. [Theoretical Basics](#basics)
   1. [General](#general)
-  2. [Block/Page Formats](#page-formats)
+  2. [Block/Page/File Formats](#page-formats)
   3. [Storage Systems](#storage-systems)
   4. [NoSQL](#nosql)
   5. [Big Data Management Systems](#big-data-man-sys)
@@ -41,7 +41,7 @@ List of papers, reports and links to materials on Big Data and related topics.
 * [The Anatomy of Big Data Computing](http://arxiv.org/ftp/arxiv/papers/1509/1509.01331.pdf) (2015): Advances in information technology and its widespread growth in several areas of business, engineering, medical and scientific studies are resulting in information/data explosion. Knowledge discovery and decision making from such rapidly growing voluminous data is a challenging task in terms of data organization and processing, which is an emerging trend known as Big Data Computing; a new paradigm which combines large scale compute, new data intensive techniques and mathematical models to build data analytics. Big Data computing demands a huge storage and computing for data curation and processing that could be delivered from on-premise or clouds infrastructures. This paper discusses the evolution of Big Data computing, differences between traditional data warehousing and Big Data, taxonomy of Big Data computing and underpinning technologies, integrated platform of Big Data and Clouds known as Big Data Clouds, layered architecture and components of Big Data Cloud and finally discusses open technical challenges and future directions.
 
 
-## <a name='page-formats'> Block/Page Formats
+## <a name='page-formats'> Block/Page/File Formats
 
 
 * [(DSM) A decomposition storage model] (http://www3.in.tum.de/teaching/ws0506/MMDBMS/download/decomposition-storage-model.pdf) (1985): This report  examines  the relative  advantages of  a storage  model  based  on decomposition  (of community  view  relations  into  binary  relations containing  a surrogate  and  one attribute) over conventional  n-ary  storage  models.
