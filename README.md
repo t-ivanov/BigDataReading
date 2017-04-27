@@ -194,6 +194,8 @@ previous systems, Spark SQL makes two main additions. First, it offers much tigh
 
 * [SAMOA: a platform for mining big data streams] (http://dl.acm.org/citation.cfm?id=2488042)
 
+* [Streaming Systems] (https://github.com/lw-lin/streaming-readings)
+
 ## <a name='graph-processing'> Graph Processing
 
 * [GraphX: Graph Processing in a Distributed Dataflow Framework] (https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-gonzalez.pdf) (2014): In this paper we argue that many of the advantages of specialized graph processing systems can be recovered in a modern general-purpose distributed dataflow
